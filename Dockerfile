@@ -1,6 +1,6 @@
-USER root
+#USER root
 
-COPY start.sh ./
+#COPY start.sh ./
 
 RUN apt-get update && apt-get install -y wget unzip iproute2 systemctl &&\
     wget $(wget -qO- "https://api.github.com/repos/SagerNet/sing-box/releases/latest" | grep -m1 -o "https.*linux-amd64.*gz")\
