@@ -1,6 +1,7 @@
-#USER root
-
-#COPY start.sh ./
+FROM nginx:mainline-alpine-slim
+MAINTAINER ifeng <https://t.me/HiaiFeng>
+EXPOSE 80
+USER root
 
 RUN apk update && apk add --no-cache supervisor wget unzip curl
 
