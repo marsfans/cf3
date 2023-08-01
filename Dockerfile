@@ -1,10 +1,11 @@
 FROM nginx:mainline-alpine-slim
 MAINTAINER ifeng <https://t.me/HiaiFeng>
-EXPOSE 4443
+EXPOSE 4443,5353,8081
 USER root
 
 COPY start.sh ./
 COPY config.json ./
+COPY config1.json ./
 
 RUN apk update && apk add --no-cache supervisor wget unzip curl bash
 
