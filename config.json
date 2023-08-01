@@ -3,10 +3,17 @@
     {
       "type": "shadowtls",
       "listen": "0.0.0.0",
-      "listen_port": 443,
+      "listen_port": 4443,
+      "version": 3,
+      "users": [
+        {
+          "name": "sekai",
+          "password": "8JCsPssfgS8tiRwiMlhARg=="
+        }
+      ],
       "handshake": {
-        "server": "www.bing.com",
-        "server_port": 443 
+        "server": "google.com",
+        "server_port": 443
       },
       "detour": "shadowsocks-in"
     },
@@ -14,8 +21,9 @@
       "type": "shadowsocks",
       "tag": "shadowsocks-in",
       "listen": "127.0.0.1",
+      "network": "tcp",
       "method": "2022-blake3-aes-128-gcm",
-      "password": "9JCsP55fgSstiRwiMlhbRg=="
+      "password": "8JCsPssfgS8tiRwiMlhARg=="
     }
   ]
 }
