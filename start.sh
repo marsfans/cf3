@@ -1,1 +1,1 @@
-sing-box run -c config.json
+./sing-box run -c ./config.json
