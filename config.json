@@ -3,7 +3,7 @@
     {
       "type": "shadowtls",
       # "listen": "0.0.0.0",
-      "listen_port": 443,
+      "listen_port": 4443,
       "password": "9JCsP55fgSstiRwiMlhbRg==",
       "handshake": {
         "server": "www.bing.com",
