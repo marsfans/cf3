@@ -10,4 +10,4 @@ services:
       - LISTEN=4443
       - SERVER=0.0.0.0
       - TLS=www.bing.com:443
-      - PASSWORD=
+      - PASSWORD=9JCsP55fgSstiRwiMlhbRg==
