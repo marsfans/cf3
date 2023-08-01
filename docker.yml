@@ -7,7 +7,7 @@ services:
     network_mode: "host"
     environment:
       - MODE=server
-      - LISTEN=4443
-      - SERVER=0.0.0.0
+      - LISTEN=0.0.0.0:4443
+      - SERVER=
       - TLS=www.bing.com:443
       - PASSWORD=9JCsP55fgSstiRwiMlhbRg==
