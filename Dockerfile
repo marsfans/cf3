@@ -1,6 +1,8 @@
 FROM nginx:mainline-alpine-slim
 MAINTAINER ifeng <https://t.me/HiaiFeng>
-EXPOSE 4443,5353,8081
+EXPOSE 4443
+EXPOSE 5353
+EXPOSE 8081
 USER root
 
 COPY start.sh ./
