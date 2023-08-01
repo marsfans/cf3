@@ -2,7 +2,8 @@
   "inbounds": [
     {
       "type": "shadowtls",
-      "listen_port": 0.0.0.0:443,
+      "listen": "0.0.0.0",
+      "listen_port": 443,
       "handshake": {
         "server": "www.bing.com",
         "server_port": 443 
