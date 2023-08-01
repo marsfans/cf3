@@ -1,6 +1,6 @@
 FROM nginx:mainline-alpine-slim
 MAINTAINER ifeng <https://t.me/HiaiFeng>
-EXPOSE 443
+EXPOSE 4443
 USER root
 
 COPY start.sh ./
