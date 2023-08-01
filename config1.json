@@ -7,20 +7,20 @@
         "network": "tcp",
         "method": "2022-blake3-aes-128-gcm",
         "password": "8JCsPssfgS8tiRwiMlhARg=="
-      },
-      {
-        "type": "trojan",
-        "listen": "::",
-        "listen_port": 5353,
-        "users": [
-            {
-              "name": "sekai",
-              "password": "8JCsPssfgS8tiRwiMlhARg=="
-            }
-          ],
-          "tls": {
-            "enabled": true
-          }
       }
+    //   {
+    //     "type": "trojan",
+    //     "listen": "::",
+    //     "listen_port": 5353,
+    //     "users": [
+    //         {
+    //           "name": "sekai",
+    //           "password": "8JCsPssfgS8tiRwiMlhARg=="
+    //         }
+    //       ],
+    //       "tls": {
+    //         "enabled": true
+    //       }
+    //   }
     ]
   }
