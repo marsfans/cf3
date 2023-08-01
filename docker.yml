@@ -1,0 +1,13 @@
+version: '2.4'
+services:
+  shadow-tls:
+    image: ghcr.io/ihciah/shadow-tls:latest
+    container_name: shadow-tls
+    restart: always
+    network_mode: "host"
+    environment:
+      - MODE=server
+      - LISTEN=4443
+      - SERVER=0.0.0.0
+      - TLS=www.bing.com:443
+      - PASSWORD=
