@@ -3,7 +3,7 @@
     {
       "type": "shadowtls",
       "listen": "0.0.0.0",
-      "listen_port": 4443,
+      "listen_port": 443,
       "version": 3,
       "users": [
         {
@@ -12,7 +12,7 @@
         }
       ],
       "handshake": {
-        "server": "google.com",
+        "server": "bing.com",
         "server_port": 443
       },
       "detour": "shadowsocks-in"
