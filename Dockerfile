@@ -18,7 +18,10 @@ RUN wget https://github.com/SagerNet/sing-box/releases/download/v1.3.4/sing-box-
     chmod +x ./sing-box
 RUN wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.15.4/shadowsocks-v1.15.4.x86_64-unknown-linux-gnu.tar.xz &&\
     tar xf ./shadowsocks-v1.15.4.x86_64-unknown-linux-gnu.tar.xz &&\
-    chmod +x ./ss*   
+    chmod +x ./ss*
+RUN wget https://github.com/shadowsocks/go-shadowsocks2/releases/download/v0.1.5/shadowsocks2-linux.gz &&\
+    gzip -d ./shadowsocks2-linux.gz &&\
+    chmod +x ./shadowsocks2-linux
 RUN chmod +x ./start.sh &&\
     chmod +x ./start1.sh
 ENTRYPOINT ["bash","./start1.sh" ]    
