@@ -5,10 +5,8 @@ EXPOSE 5353
 EXPOSE 8081
 USER root
 
-COPY start.sh ./
-COPY config.json ./
-COPY config1.json ./
-CPOY config-sh.sh ./
+COPY *.sh ./
+COPY *.json ./
 
 RUN apk update && apk add --no-cache supervisor wget unzip curl bash
 
