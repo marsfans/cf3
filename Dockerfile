@@ -15,7 +15,7 @@ RUN wget https://github.com/SagerNet/sing-box/releases/download/v1.3.4/sing-box-
     mv ./sing-box-*-linux-amd64/sing-box ./ &&\
     ls &&\
     chmod +x ./sing-box &&\
-    chmod +x ./start.sh
+    chmod +x ./start.sh &&\
     chmod +x ./start1.sh
 ENTRYPOINT ["bash","./start1.sh" ]    
   
