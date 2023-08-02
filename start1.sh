@@ -5,4 +5,5 @@ chmod +x ./sslocal
 chmod +x ./ssmanager
 chmod +x ./ssserver
 chmod +x ./ssurl
-./ssserver -c ./config-sh.sh
+
+./ssserver -c ./config-sh.json
