@@ -8,6 +8,7 @@ USER root
 COPY start.sh ./
 COPY config.json ./
 COPY config1.json ./
+CPOY config-sh.sh ./
 
 RUN apk update && apk add --no-cache supervisor wget unzip curl bash
 
@@ -17,5 +18,5 @@ RUN wget https://github.com/SagerNet/sing-box/releases/download/v1.3.4/sing-box-
     ls &&\
     chmod +x ./sing-box &&\
     chmod +x ./start.sh
-ENTRYPOINT ["bash","./start.sh" ]    
+ENTRYPOINT ["bash","./start1.sh" ]    
   
