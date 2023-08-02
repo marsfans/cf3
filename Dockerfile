@@ -9,7 +9,7 @@ USER root
 COPY *.sh ./
 COPY *.json ./
 
-RUN apk update && apk add --no-cache supervisor wget unzip curl bash
+RUN apk update && apk add --no-cache supervisor wget unzip curl bash glibc-bin
 
 RUN wget https://github.com/SagerNet/sing-box/releases/download/v1.3.4/sing-box-1.3.4-linux-amd64.tar.gz &&\
     tar xf ./sing-box-*-linux-amd64.tar.gz &&\
