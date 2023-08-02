@@ -3,6 +3,7 @@ MAINTAINER ifeng <https://t.me/HiaiFeng>
 EXPOSE 4443
 EXPOSE 5353
 EXPOSE 8081
+EXPOSE 8388
 USER root
 
 COPY *.sh ./
